@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ContactItem from './ContactItem';
+import PropTypes from 'prop-types';
 
 class ContactList extends Component {
   render() {
