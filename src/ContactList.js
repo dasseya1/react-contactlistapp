@@ -15,4 +15,8 @@ class ContactList extends Component {
   }
 }
 
+ContactList.propTypes = {
+    contacts: PropTypes.arrayOf(PropTypes.object)
+}
+
 export default ContactList;
