@@ -12,9 +12,7 @@ export default class App extends Component {
     }
   }
   handleUserInput(searchTerm){
-    this.setState({
-      filterText: searchTerm
-    })
+    this.setState({filterText: searchTerm})
   }
   render() {
     return (
