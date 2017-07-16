@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 
 class ContactList extends Component {
   render() {
+      let filteredContacts = this.props.contacts.filter(
+          (contact) => contact.name.indexOf(this.props.filterText !== -1));
     return (
         <ul>
-            {this.props.contacts.map((contact) => <ContactItem 
+            {filteredContacts.map((contact) => <ContactItem 
                                                    key={contact.email}
                                                    name={contact.name}
                                                    email={contact.email}
