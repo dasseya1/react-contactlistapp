@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Search from './Search';
+import ContactList from './ContactList';
 import './App.css';
 
 class App extends Component {
@@ -6,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <ContactList />
+        <ContactList contacts={this.state.contacts} />
       </div>
     );
   }
